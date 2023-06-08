@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Registry</title>
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #2F4F4F;
+            margin-top: 40px;
+        }
+        form {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #888888;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+            color: #2F4F4F;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], select {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 5px #888888;
+        }
+        input[type="submit"] {
+            background-color: #2F4F4F;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #696969;
+        }
+    </style>
+</head>
+<body>
+    <h1>Friend Registry</h1>
+    <form action="https://script.google.com/macros/s/AKfycbxwJi5ju-BXNH8dk0VEtBW7PU189hc6liUyqIyA1boGpwBVagyu9TADGskjXYEWBgHT/exec" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Please select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
+
+
